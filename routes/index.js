@@ -9,4 +9,7 @@ router.get('/', function(req, res, next) {
 });
 });
 
+
+router.get('/register', (req,res) => res.render('register.hbs'));
+
 module.exports = router;

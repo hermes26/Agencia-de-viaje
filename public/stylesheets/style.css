@@ -10,17 +10,44 @@ a {
 .headerImg{
   height: auto;
   width: 100%;
-  position: absolute;
 }
 
-.headerWords{
-  position: relative;
-  top: 50vmax;
-  left: 50vmax;
+
+#idOffers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30px;
 }
 
 .offers{
-  display: grid;
-  grid-template-columns: 1fr 0.25fr 1fr 0.25 fr 1fr;
-  grid-template-rows: 1fr 0.5fr 1fr;
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.destination{
+  height: 30vh;
+  width: 23vw;
+}
+
+.image{
+  height: 100%;
+}
+
+/* input{
+  all: unset;
+  y despues poner propiedades que quiere
+  display: inline;
+  flex-basis es como su fuese width/pero tmbien en vertical
+}  */
+
+
+/* //bara nav con un position: absolute; */
+
+footer > div {
+  display: flex;
 }
