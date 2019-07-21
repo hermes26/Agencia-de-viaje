@@ -5,3 +5,5 @@ mongoose.connect(`mongodb://localhost:27017/WebTravelAgency_dev`,{
 .catch((e) => console.log('Connection to MongoDB failed!:( \n' + e))
 
 module.exports=mongoose;
+
+//OK

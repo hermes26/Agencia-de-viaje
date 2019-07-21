@@ -5,67 +5,77 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="./javascript/main.js"></script>
+    <script src="/javascripts/main.js" async ></script>
   </head>
   <body>
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="./images/iconoweb.png" width="30" height="30" class="d-inline-block align-top" alt="">        
-        <a class="navbar-brand" href="#">GeeksHubs Travels</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Destinos<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Quién somos</a>
-        <a class="nav-item nav-link" href="#">Donde estamos</a>
+      
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+          <a class="home" href="/"><img class="navbar-brand iconWeb" src="/images/iconoweb.png" alt="iconWeb"><p>GeeksHubs Travel</p></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
         
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-whatsapp"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
+          <div class="collapse navbar-collapse navBarMenu" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#destinos">Destinos</a>
+                <a class="nav-item nav-link" href="#about">Quién somos</a>
+                <a class="nav-item nav-link" href="#ubi">Donde estamos</a>
+              <div class="btns">
+                <a class="btn btn-outline-primary" href="http://localhost:3000/register" role="button">Únete ahora</a>
+                <a class="btn btn-outline-success" href="http://localhost:3000/login" role="button">Sign In</a> 
+              </div>
+            </div>
+          </div>
+
+          {{!-- <div class="socialLinks navbar-nav">
+            <a class="nav-item nav-link login" href="/login"><img src="/images/user.png" alt="login"></a>
+          </div> --}}
+
         </nav>
 
-        
-        <div class="headerWords">
-        <div>Viaja!</div>
-        <div>Descubre lugares maravillosos</div>
-        <button type="submit">Ver Destinos</button>
-        </div>
+      
 
-        <div><img src="./images/nathan-anderson-316188-unsplash.jpg" alt="" class= "headerImg" srcset=""></div>
-      </header>
 
-     
+      {{{body}}}
+
 
       <footer>
-        <div>
-          <div>
-            <h3>¿Necesitas Ayuda?</h3>
-            <p>0264 123 4567</p>
-            <p>enquiry@geekshubstravel.com</p>
-            <p>Lun-Vie 9:30 - 19:00 Sab: 10:00-14:00</p>
-          </div>
-          <div>
-            <h3>Información</h3>
-            <p>Quien somos</p>
-            <p>Preguntas Frecuentes</p>
-            <p>Politica de Privacidad</p>
-            <p>Condiciones Generales</p>
-            <p>Aviso Legal</p>
-            <p>Contacto</p>
-            <p>Programa de Puntos</p>
-          </div>
-          <div>
-            <h3>Suscribite a la Newsletter</h3>
-            <input type="email" placeholder="Correo">
-            <button>Suscribite</button>
-          </div>
+        <div class="footerBox">
+            <div class= "ayuda">
+              <h3>¿Necesitas Ayuda?</h3>
+              <p>0264 123 4567</p>
+              <p>enquiry@geekshubstravel.com</p>
+              <p>Lun-Vie 9:30 - 19:00 Sab: 10:00-14:00</p>
+            </div>
+
+            <div class = "informacion">
+              <h3>Información</h3>
+              <p>Quien somos</p>
+              <p>Preguntas Frecuentes</p>
+              <p>Politica de Privacidad</p>
+              <p>Condiciones Generales</p>
+              <p>Aviso Legal</p>
+              <p>Contacto</p>
+              <p>Programa de Puntos</p>
+            </div>
+
+            <div class = "suscribete">
+              <h3>Suscribete a la Newsletter</h3>
+              <input type="email" placeholder="Correo">
+              <button>Suscribete</button>
+              <div class="icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
+
         </div>
 
-        <div>
+        <div class="copyright">
           <div>GeeksHubs Travels 2019 Todos los derechos reservados</div>
         </div>
       </footer>

@@ -1,53 +1,574 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.navbar-nav {
+  justify-content: space-between;
+  width: 70vw;
+  margin-left: 10vw;
 }
 
-.headerImg{
-  height: auto;
-  width: 100%;
+.btns{
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-outline-primary {
+
+  color: #01356d;
+  border-color: #01356d; 
+  font-size: 1.3em;
+}
+
+.btn-outline-success {
+  color: #075f1c;
+  border-color: #075f1c;
+}
+
+.iconWeb {
+  width: 120px;
+  height: 80px;
+}
+
+.sticky-top{
+  position: fixed;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+  font-size: 1.5em;
 }
 
 
-#idOffers{
+
+
+/* @media(max-width: 992px) {
+  .navbar {
+      background-color: #141939;
+  }
+}
+
+.navBarMenu {
+  justify-content: center;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #0279a4;
+  border-radius: 0 !important;
+}
+
+.navbar-collapse {
+  width: 100vw;
+}
+
+.navbar-nav a {
+  font-size: 1.3em;
+  font-style: italic;
+  color: white !important;
+}
+
+.navbar-nav a:hover {
+  color: yellow !important;
+}
+
+.navbar-nav a.login:nth-child(4) {
+  display: none;
+}
+
+.navbar-nav a.login img {
+  width: 50px;
+} */
+
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+.header {
+  height: 100vh;
+  background-image: url("/images/nathan-anderson-316188-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: 30px;
 }
 
-.offers{
+.headerWords{
+  width: 40vw;
+  height: 50vh;
+  color: whitesmoke;
+}
+
+.headerWords h1 {
+  /* margin-left: 30%; */
+  font-weight: bold;
+  font-size: 4em;
+} 
+
+.headerWords p {
+
+  /* margin-bottom: 1em; */
+  font-size: 2.5em;
+  text-align: end;
+  margin: 3vh 0;
+} 
+.headerWords button {
+  all: unset;
+  color: black;
+  background-color: #fef200;
+  text-align: center;
+  font-size: 1.5em;
+  width: 18vw;
+  height: 6vh;
+  margin: 5vh 30vh;
+  border-radius: 2px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+/* #idOffers{
+  border: 1px solid red;
+  height: 100vh;
+  margin-top: 30px;
+} */
+
+/* #offers{
   height: 100vh;
   width: 80vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+} */
+
+#offers {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 3em 2em 1em 7em;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#offers > div{
+  padding: 2em 0.5em 1em 0.5em;
 }
 
 .destination{
-  height: 30vh;
-  width: 23vw;
+  height: 20em;
+  width: 23em;
+  display: grid;
+  grid-template-rows: 0.25fr 0.25fr 0.25fr 2fr 0.25fr 0.5fr; 
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
 }
 
-.image{
-  height: 100%;
+.destino{
+  grid-column: 1 / 4;
+  grid-row: 1 / 5;
 }
 
-/* input{
-  all: unset;
-  y despues poner propiedades que quiere
-  display: inline;
-  flex-basis es como su fuese width/pero tmbien en vertical
-}  */
-
-
-/* //bara nav con un position: absolute; */
-
-footer > div {
+.destination p{
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  z-index: 1;
+  font-size: 1.2em;
+  color :white;
+  background-color: #141939;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
+
+.destination h3{
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+  z-index: 1;
+  /* font-size: 1.8em; */
+  font-weight: bold;
+  color:black;
+  padding: 0.4em;
+  background-color: #fef200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.destination div{
+  grid-row: 6;
+  grid-column: 1 / 4;
+  margin: auto;
+}
+
+
+
+
+
+/* .uno{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/Mykonos.jpg');
+  height: 15em;
+  width: 20em;
+  position: relative;
+  z-index: 1;
+  margin: 1em;
+}
+
+.dos{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/london.jpg');
+  height: 15em;
+  width: 20em;
+  position: relative;
+  z-index: 1;
+  margin: 1em;
+}
+
+.tres{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/dublin.jpg');
+  height: 15em;
+  width: 20em;
+  position: relative;
+  z-index: 1;
+  margin: 1em;
+}
+
+.cuatro{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/paris.jpg');
+  height: 15em;
+  width: 20em;
+  position: relative;
+  z-index: 1;
+  margin: 1em;
+}
+
+.cinco{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/amsterdam.jpg');
+  height: 15em;
+  width: 20em;
+  position: relative;
+  z-index: 1;
+  margin: 1em;
+}
+
+.seis{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/rome.jpg');
+  height: 15em;
+  width: 20em;
+  position: relative;
+  z-index: 1;
+  margin: 1em;
+}
+
+ */
+
+
+/* .destination p {
+  font-size: 1.2em;
+  text-align: left;
+  padding: 0.5em 0 0.5em 0.5em;
+  top:-1.65em;
+  left: -0.42em;;
+  margin: 0 auto;
+  position: relative;
+  color :white;
+  background-color: #141939;
+  z-index: 2;
+}
+
+.destination h3{
+  font-size: 1.8em;
+  font-weight: bold;
+  top:-2.5em;
+  right: -3.4em;
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+  color:black;
+  padding: 0.4em;
+  background-color: #fef200;
+  z-index: 3;
+}
+
+.pais{
+  position: relative;
+  top: 9.5em;
+} */
+
+
+
+
+/* //////////////////////////////////////QUIEN SOMOS///////////////////////////////////////////////// */
+
+.quienBox {
+  background-image: url('../images/fixedImg.jpg');
+  background-size: cover;
+  padding: 6vh 6vw 6vh 10vw;;
+}
+
+.quien {
+  border-radius: 2px;
+  background-color: whitesmoke;
+  padding: 30px;
+  text-align: justify;
+  width: 35%; 
+  line-height: 1.6em;
+}
+
+/* .quien hr {
+  background-color: gold;
+  height: 5px;
+  width: 50%;
+  float: left;
+} */
+
+.quien h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.quien p {
+  padding: 1.7em 0;
+}
+
+.descubrir {
+  text-align: center;
+  height: 6vh;
+}
+
+.descubrir button {
+  all: unset;
+  border-radius: 2px;
+  background-color: darkblue;
+  color: yellow;
+  font-weight: bold;
+  height: 100%;
+  width: 15vw;
+  
+}
+
+
+/* //////////////////////////////////////CONTACTARNOS///////////////////////////////////////////// */
+
+.formSection {
+  display: flex;
+  padding: 3em;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.frame{
+  flex: 1;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  padding: 0 5em;
+}
+
+.contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact p{
+  padding: 0;
+  margin: 0;
+}
+
+.contact button {
+  all: unset;
+  text-align: center;
+  color: black;
+  background-color: #fef200;
+  font-size: 1.3em;
+  width: 25%;
+  padding: 0.5em;
+  margin-top: 0.6em;
+  border-radius: 2px;
+}
+
+
+.details input[type = text]{
+  margin: 0.3em 0;
+  width: 18vw;
+  height: 6vh;
+  text-indent: 0.5em;
+  border-radius: 0.2em;
+  border: none;
+  border: 1px solid grey;
+}
+
+.details textarea{
+    width: 78.4%;
+    border-radius: 2px;
+    border: none;
+    border: 1px solid gray;
+    margin: 0.4em 0;
+}
+
+.warning {
+  font-size: 0.7em;
+}
+
+
+/* ///////////////////////////////FOOTER///////////////////////////////////////////////// */
+.footerBox{
+  color: white;
+  padding: 1.5rem;
+}
+
+footer  div{
+  background-color: #141939;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer input[type = email] {
+ padding: 0;
+ margin: 0;
+}
+
+footer button {
+  all: unset;
+  color: black;
+  text-align: center;
+  background-color: #fef200;
+  border-radius: 2px;
+  font-size: 1.3em;
+  width: 60%;
+  height: 5vh;
+}
+
+footer .ayuda,
+footer .informacion,
+footer .suscribete {
+  display: flex;
+  flex-direction: column;
+}
+
+.ayuda{
+  justify-content: flex-start;
+}
+
+.ayuda h3{
+  padding-bottom: 1.5em;
+}
+.ayuda p{
+  padding-left: 1.5em;
+}
+
+.suscribete h3{
+  padding: 0;
+  margin: 0;
+}
+
+.icons i{
+  transform: scale(1.5);
+}
+
+.copyright {
+  border-top: solid black 0.1em;  
+  padding: 1.5em;
+  margin: 0 auto; 
+  color: white;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.inputDiv{
+  background-image: url("/images/airport.jpg");
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blanchedalmond;
+  opacity: 0.7;
+  width: 60vw;
+  padding: 1em;
+  border-radius: 2em;
+  margin-top: 10em;
+}
+
+.form div:nth-Child(1) {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 0.3em;
+}
+
+.form div:nth-Child(2) {
+  margin: 0.8em;
+}
+
+.inputDiv input[type = text], [type= email]{
+  margin: 0.2em;
+  width: 18vw;
+  height: 6vh;
+  text-indent: 0.5em;
+  border-radius: 0.2em;
+  border: none;
+  border: 1px solid black;
+}
+
+
+
+input[type = submit]{
+  background-color: yellow;
+  border: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 5vh;
+  width: 10vh;
+  margin-bottom: 1em;
+}
+
+.invalidPassword{
+  color: red;
+  font-size: 0.9em;
+}
+
+
+.signIn{
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  background: inherit;
+  margin-bottom: 1em;
+}
+
+.signIn:focus {outline:0;}
+
